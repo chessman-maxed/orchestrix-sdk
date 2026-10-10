@@ -1,0 +1,24 @@
+{
+  "name": "orchestrix",
+  "version": "1.0.0",
+  "description": "Orchestrix — Distributed Task Queue & Job Scheduler",
+  "main": "dist/api.js",
+  "scripts": {
+    "build": "tsc",
+    "start:api": "ts-node src/api.ts",
+    "start:worker": "ts-node src/worker.ts"
+  },
+  "dependencies": {
+    "bullmq": "^5.41.0",
+    "express": "^4.21.2",
+    "ioredis": "^5.5.0",
+    "pg": "^8.23.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.17.19",
+    "@types/pg": "^8.23.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}

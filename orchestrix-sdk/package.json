@@ -1,0 +1,47 @@
+{
+  "name": "orchestrix-sdk",
+  "version": "0.1.0",
+  "description": "Developer-friendly Node.js / TypeScript SDK for Orchestrix job orchestration engine",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test:integration": "node test-integration.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "orchestrix",
+    "job-queue",
+    "workflow",
+    "scheduler",
+    "bullmq",
+    "sdk"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chessman-maxed/Orchestrix.git"
+  },
+  "homepage": "https://github.com/chessman-maxed/Orchestrix#readme",
+  "bugs": {
+    "url": "https://github.com/chessman-maxed/Orchestrix/issues"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
